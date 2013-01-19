@@ -4,26 +4,26 @@
 
 var quizJSON = {
     "info": {
-        "name":    "Test Your Knowledge!!",
-        "main":    "<p>Think you're smart enough to be on Jeopardy? Find out with this super crazy knowledge quiz!</p>",
+        "name":    "Web App Sec Quiz",
+        "main":    "<p>Are you a security professional or developer? Test your Web App Sec knowledge!</p>",
         "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
-        "level1":  "Jeopardy Ready",
-        "level2":  "Jeopardy Contender",
-        "level3":  "Jeopardy Amateur",
-        "level4":  "Jeopardy Newb",
-        "level5":  "Stay in school, kid..." // no comma here
+        "level1":  "Rockstar! You are ready to pwn the world!",
+        "level2":  "Nice score! Some gaps in your knowledge, all you need is time.",
+        "level3":  "Not bad, do some more practice. Download OWASP's Broken Web Apps VM",
+        "level4":  "Read some more Hackers Handbook",
+        "level5":  "n00b" // no comma here
     },
     "questions": [
         { // Question 1
-            "q": "What number is the letter A in the English alphabet?",
+            "q": "What 3 elements make up the 'origin' in the Same Origin Policy (SOP)?",
             "a": [
-                {"option": "8",      "correct": false},
-                {"option": "14",     "correct": false},
-                {"option": "1",      "correct": true},
-                {"option": "23",     "correct": false} // no comma here
+                {"option": "The URL path, domain name and query string",      "correct": false},
+                {"option": "The (in most browsers) port number, fragment id and server geo location",     "correct": false},
+                {"option": "The domain name, application layer protocol, and (in most browsers) port number",      "correct": true},
+                {"option": "The user agent, the port number and the top level domain (TLD)",     "correct": false} // no comma here
             ],
-            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+            "correct": "<p><span>That's right!</span> Well done!</p>",
+            "incorrect": "<p><span>Uhh no.</span> Please read Wikipedia's <a href='http://en.wikipedia.org/wiki/Same_origin_policy' target='_blank'>article</a> on the SOP.</p>" // no comma here
         },
         { // Question 2
             "q": "How many inches of rain does Michigan get on average per year?",
