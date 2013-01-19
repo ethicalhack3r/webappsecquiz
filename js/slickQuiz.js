@@ -20,10 +20,10 @@
             checkAnswerText:  'Check My Answer!',
             nextQuestionText: 'Next &raquo;',
             backButtonText: '',
-            randomSort: false,
-            randomSortQuestions: false,
-            randomSortAnswers: false,
-            preventUnanswered: false,
+            randomSort: true,
+            randomSortQuestions: true,
+            randomSortAnswers: true,
+            preventUnanswered: true,
             completionResponseMessaging: false,
             disableResponseMessaging: false
         };

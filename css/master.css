@@ -132,3 +132,10 @@ ul.responses li.correct p span {
 .quizResultsCopy {
     margin-top: 20px;
 }
+.footer {
+  margin-top: 10px;
+  font-size: 10px;
+}
+.footer a {
+    text-decoration: none;
+}

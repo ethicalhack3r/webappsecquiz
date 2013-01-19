@@ -26,15 +26,15 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> Please read Wikipedia's <a href='http://en.wikipedia.org/wiki/Same_origin_policy' target='_blank'>article</a> on the SOP.</p>" // no comma here
         },
         { // Question 2
-            "q": "How many inches of rain does Michigan get on average per year?",
+            "q": "What does the 'secure' flag do to a cookie? (if the browser supports it)",
             "a": [
-                {"option": "149",    "correct": false},
-                {"option": "32",     "correct": true},
-                {"option": "3",      "correct": false},
-                {"option": "1291",   "correct": false} // no comma here
+                {"option": "Ensures client side script can not access the cookie",    "correct": false},
+                {"option": "Ensure the cookie can not be sent over unencrypted HTTP",      "correct": true},
+                {"option": "Ensures the cookie can not be sent to the server",     "correct": false},
+                {"option": "Ensure the cookie is cryptographically strong",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Holy bananas!</span> I didn't actually expect you to know that! Correct!</p>",
-            "incorrect": "<p><span>Fail.</span> Sorry. You lose. It actually rains approximately 32 times a year in Michigan.</p>" // no comma here
+            "correct": "<p><span>Holy bananas!</span> Correct!</p>",
+            "incorrect": "<p><span>Fail.</span> See: <a href='https://www.owasp.org/index.php/SecureFlag' target='_blank'>https://www.owasp.org/index.php/SecureFlag</a></p>" // no comma here
         },
         { // Question 3
             "q": "In which of these places can you purchase a car?",
