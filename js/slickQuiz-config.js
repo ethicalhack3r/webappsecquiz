@@ -37,15 +37,15 @@ var quizJSON = {
             "incorrect": "<p><span>Fail.</span> See: <a href='https://www.owasp.org/index.php/SecureFlag' target='_blank'>https://www.owasp.org/index.php/SecureFlag</a></p>" // no comma here
         },
         { // Question 3
-            "q": "In which of these places can you purchase a car?",
+            "q": "When storing passwords in a database you should...",
             "a": [
-                {"option": "The Zoo",        "correct": false},
-                {"option": "Ebay",           "correct": true},
-                {"option": "Grocery Store",  "correct": false},
-                {"option": "Used Car Lot",   "correct": true} // no comma here
+                {"option": "Encrypt them",        "correct": false},
+                {"option": "Hash and salt them",           "correct": true},
+                {"option": "Hash them",  "correct": false},
+                {"option": "Encode them",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Nice!</span> You can indeed buy a car on Ebay or in a used car lot.</p>",
-            "incorrect": "<p><span>No.</span> You can't buy a car at the zoo or in a grocery store, try Ebay or a used car lot instead.</p>" // no comma here
+            "correct": "<p><span>Nice!</span> You must not work for Tesco!</p>",
+            "incorrect": "<p><span>No.</span> Never store passwords! See: <a href='https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet' target='_blank'>https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet</a></p>" // no comma here
         },
         { // Question 4
             "q": "Is Earth bigger than a basketball?",
