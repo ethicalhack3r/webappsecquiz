@@ -15,11 +15,11 @@ var quizJSON = {
     },
     "questions": [
         { // Question 1
-            "q": "What 3 elements make up the 'origin' in the Same Origin Policy (SOP)?",
+            "q": "What three elements (in most browsers) make up the 'origin' in the Same Origin Policy (SOP)?",
             "a": [
                 {"option": "The URL path, domain name and query string",      "correct": false},
-                {"option": "The (in most browsers) port number, fragment id and server geo location",     "correct": false},
-                {"option": "The domain name, application layer protocol, and (in most browsers) port number",      "correct": true},
+                {"option": "The port number, fragment id and server geo location",     "correct": false},
+                {"option": "The domain name, application layer protocol, and port number",      "correct": true},
                 {"option": "The user agent, the port number and the top level domain (TLD)",     "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> Well done!</p>",
@@ -75,6 +75,17 @@ var quizJSON = {
             ],
             "correct": "<p><span>You're right!</span> Blacklisting is never advised and sanitisation depends on the context.</p>",
             "incorrect": "<p><span>Wrong!</span> Read the <a href='https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet' target='_blank'>OWASP XSS Prevention Cheat Sheet</a>.</p>" // no comma here
+        },
+        { // Question 6
+            "q": "Clickjacking is when an attacker...",
+            "a": [
+                {"option": "Takes control of the user's mouse by using Flash",  "correct": false},
+                {"option": "Downgrades the user from HTTPS to HTTP",  "correct": false},
+                {"option": "Tricks the user into clicking on something by using frames",  "correct": true},
+                {"option": "Is able to port scan RFC1918 addresses",  "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Yup!</span> Use the X-Frame-Options header to help mitigate the attack.</p>",
+            "incorrect": "<p><span>Nooooo!</span> Read <a href='https://www.owasp.org/index.php/Clickjacking' target='_blank'>https://www.owasp.org/index.php/Clickjacking</a></p>" // no comma here
         } // no comma here
     ]
 };
