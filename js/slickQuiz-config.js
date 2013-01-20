@@ -6,12 +6,12 @@ var quizJSON = {
     "info": {
         "name":    "Web App Sec Quiz",
         "main":    "<p>Are you a security professional or developer? Test your Web App Sec knowledge!</p>",
-        "results": "<h5>Learn More</h5> <p><a href='https://www.owasp.org/index.php/Main_Page'>OWASP</a></p>",
+        "results": "<h5>Learn More</h5> <p>Check out: <a href='https://www.owasp.org/index.php/Main_Page'>OWASP</a> <br /> Report issues: <a href='https://github.com/ethicalhack3r/webappsecquiz/tree/gh-pages'>https://github.com/ethicalhack3r/webappsecquiz/tree/gh-pages</a></p>",
         "level1":  "Rockstar! You are ready to pwn the world!",
         "level2":  "Nice score! Some gaps in your knowledge, all you need is time.",
-        "level3":  "Not bad, do some more practice. Download OWASP's Broken Web Apps VM",
-        "level4":  "Read some more Hackers Handbook",
-        "level5":  "n00b" // no comma here
+        "level3":  "Not bad, do some more practice. Download OWASP's <a href='https://code.google.com/p/owaspbwa/'>Broken Web Apps VM</a>",
+        "level4":  "Read some more <a href='https://www.amazon.com/The-Web-Application-Hackers-Handbook/dp/1118026470'>Hackers Handbook</a>.",
+        "level5":  "n00b! Read the <a href='https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project'>OWASP Top 10</a>." // no comma here
     },
     "questions": [
         { // Question 1
@@ -23,7 +23,7 @@ var quizJSON = {
                 {"option": "The user agent, the port number and the top level domain (TLD)",     "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> Well done!</p>",
-            "incorrect": "<p><span>Uhh no.</span> Please read Wikipedia's <a href='http://en.wikipedia.org/wiki/Same_origin_policy' target='_blank'>article</a> on the SOP.</p>" // no comma here
+            "incorrect": "<p><span>Uhh no.</span> Please read Wikipedia's <a href='https://en.wikipedia.org/wiki/Same_origin_policy' target='_blank'>article</a> on the SOP.</p>" // no comma here
         },
         { // Question 2
             "q": "What does the 'secure' flag do to a cookie? (if the browser supports it)",
@@ -57,15 +57,24 @@ var quizJSON = {
             "incorrect": "<p><span>ERRRR!</span> See: <a href='https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security' target='_blank'>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></p>" // no comma here
         },
         { // Question 5
-            "q": "Where are you right now? Select ALL that apply.",
+            "q": "The information schema is useful when exploiting...",
             "a": [
-                {"option": "Planet Earth",   "correct": true},
-                {"option": "Pluto",          "correct": false},
-                {"option": "At a computer",  "correct": true},
-                {"option": "The Milky Way",  "correct": true} // no comma here
+                {"option": "SQL Injection",   "correct": true},
+                {"option": "Cross-Site Scripting (XSS)",          "correct": false},
+                {"option": "Session Hijacking",  "correct": false},
+                {"option": "Business Logic",  "correct": false} // no comma here
             ],
-            "correct": "<p><span>Brilliant!</span> You're seriously a genius, (wo)man.</p>",
-            "incorrect": "<p><span>Not Quite.</span> You're actually on Planet Earth, in The Milky Way, At a computer. But nice try.</p>" // no comma here
+            "correct": "<p><span>Brilliant!</span> You know your DBMS!</p>",
+            "incorrect": "<p><span>Not Quite.</span> Read pentestmonkey's <a href='http://pentestmonkey.net/category/cheat-sheet/sql-injection' target='_blank'>SQL Injection Cheat Sheets</a>.</p>" // no comma here
+        },
+        { // Question 6
+            "q": "An application is sanitising the <, > and \" characters. Is this enough to prevent Cross-Site Scripting (XSS)?",
+            "a": [
+                {"option": "Yes",  "correct": false},
+                {"option": "No",  "correct": true} // no comma here
+            ],
+            "correct": "<p><span>You're right!</span> Blacklisting is never advised and sanitisation depends on the context.</p>",
+            "incorrect": "<p><span>Wrong!</span> Read the <a href='https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet' target='_blank'>OWASP XSS Prevention Cheat Sheet</a>.</p>" // no comma here
         } // no comma here
     ]
 };
