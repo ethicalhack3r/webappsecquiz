@@ -97,6 +97,28 @@ var quizJSON = {
             ],
             "correct": "<p><span>Yipee!</span> User supplied input is being put into the Location header value.</p>",
             "incorrect": "<p><span>Damn!</span> Check out <a href='https://www.owasp.org/index.php/Top_10_2010-A10' target='_blank'>https://www.owasp.org/index.php/Top_10_2010-A10</a></p>" // no comma here
+        },
+        { // Question 9
+            "q": "Which of the following is a Web Application Firewall (WAF)?",
+            "a": [
+                {"option": "mod_security",  "correct": true},
+                {"option": "mad_waf",  "correct": false},
+                {"option": "wafw00f",  "correct": false},
+                {"option": "secure cyber wall",  "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Of course!</span> mod_security is a multi platform WAF.</p>",
+            "incorrect": "<p><span>LOL!</span> mod_security is a WAF and wafw00f is a WAF detection tool. The others were made up ;)</a></p>" // no comma here
+        },
+        { // Question 10
+            "q": "If an attacker uses this payload, what are they trying to do? '; waitfor delay '0:0:30' -- ",
+            "a": [
+                {"option": "Ping a remote host with a delay",  "correct": false},
+                {"option": "Blind SQL Injection",  "correct": true},
+                {"option": "Error Based SQL Injection",  "correct": false},
+                {"option": "Time based remote command execution",  "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Correct!</span> The WAITFOR statement blocks execution for a set amount of time in SQL Server.</p>",
+            "incorrect": "<p><span>What?!</span> Ferruh will <a href='http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/' target='_blank'>tell</a> you!</p>" // no comma here
         } // no comma here
     ]
 };
