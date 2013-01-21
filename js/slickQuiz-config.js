@@ -76,7 +76,7 @@ var quizJSON = {
             "correct": "<p><span>You're right!</span> Blacklisting is never advised and sanitisation depends on the context.</p>",
             "incorrect": "<p><span>Wrong!</span> Read the <a href='https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet' target='_blank'>OWASP XSS Prevention Cheat Sheet</a>.</p>" // no comma here
         },
-        { // Question 6
+        { // Question 7
             "q": "Clickjacking is when an attacker...",
             "a": [
                 {"option": "Takes control of the user's mouse by using Flash",  "correct": false},
@@ -86,6 +86,17 @@ var quizJSON = {
             ],
             "correct": "<p><span>Yup!</span> Use the X-Frame-Options header to help mitigate the attack.</p>",
             "incorrect": "<p><span>Nooooo!</span> Read <a href='https://www.owasp.org/index.php/Clickjacking' target='_blank'>https://www.owasp.org/index.php/Clickjacking</a></p>" // no comma here
+        }, 
+        { // Question 8
+            "q": "What vulnerability exists in the following code? <a href='http://pastie.org/5792178' target='_blank'>http://pastie.org/5792178</a>",
+            "a": [
+                {"option": "OWASP A5: Cross-Site Request Forgery (CSRF)",  "correct": false},
+                {"option": "OWASP A8: Failure to Restrict URL Access",  "correct": false},
+                {"option": "OWASP A9: Insufficient Transport Layer Protection",  "correct": false},
+                {"option": "OWASP A10: Unvalidated Redirects and Forwards",  "correct": true} // no comma here
+            ],
+            "correct": "<p><span>Yipee!</span> User supplied input is being put into the Location header value.</p>",
+            "incorrect": "<p><span>Damn!</span> Check out <a href='https://www.owasp.org/index.php/Top_10_2010-A10' target='_blank'>https://www.owasp.org/index.php/Top_10_2010-A10</a></p>" // no comma here
         } // no comma here
     ]
 };
