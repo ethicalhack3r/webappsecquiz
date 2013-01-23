@@ -116,7 +116,7 @@ var quizJSON = {
                 {"option": "Ping a remote host with a delay",  "correct": false},
                 {"option": "Blind SQL Injection",  "correct": true},
                 {"option": "Error Based SQL Injection",  "correct": false},
-                {"option": "Time based remote command execution",  "correct": false} // no comma here
+                {"option": "Time based XSS",  "correct": false} // no comma here
             ],
             "correct": "<p><span>Correct!</span> The WAITFOR statement blocks execution for a set amount of time in SQL Server.</p>",
             "incorrect": "<p><span>What?!</span> Ferruh will <a href='http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/' target='_blank'>tell</a> you!</p>" // no comma here
