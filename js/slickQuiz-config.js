@@ -1,6 +1,7 @@
-// Setup your quiz text and questions here
-
-// NOTE: pay attention to commas, IE struggles with those bad boys
+/** 
+ Yes, you've found the answers and questions.
+ This quiz is just for fun, the idea is to test your own knowledge.
+**/ 
 
 var quizJSON = {
     "info": {
